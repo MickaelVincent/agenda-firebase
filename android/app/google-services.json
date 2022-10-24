@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "625508812514",
+    "project_id": "kanban-manager-mobile",
+    "storage_bucket": "kanban-manager-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625508812514:android:ec905a4124dcb76d9280bb",
+        "android_client_info": {
+          "package_name": "com.mvincent.kanban"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625508812514-sc81imaak27kqj66hqrigjhl817bkodi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLZMpbjIVwZQyKB8hLRo7YMAJwNEWneOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625508812514-sc81imaak27kqj66hqrigjhl817bkodi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
