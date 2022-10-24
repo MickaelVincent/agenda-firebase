@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   static const List<Widget> _widgetOptions = <Widget>[KanbanHome(), ChatPage()];
-  static const List<String> _widgetName = <String>['Kanbans', 'Chat'];
+  static const List<String> _widgetName = <String>['Groupes', 'Chat'];
 
   void _onItemTapped(int index) {
     setState(() {

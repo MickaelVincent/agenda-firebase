@@ -1,6 +1,4 @@
 import 'package:Kanban/widgets/avatar-list/avatar_list.dart';
-import 'package:avatar_stack/avatar_stack.dart';
-import 'package:avatar_stack/positions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
@@ -62,12 +60,6 @@ class _KanbanHomeState extends State<KanbanHome> {
   }
 
   List<Widget> getGroupsWidgets() {
-    final settings = RestrictedAmountPositions(
-      maxCoverage: 0.6,
-      minCoverage: 0.4,
-      align: StackAlign.left,
-    );
-
     var test = groupStore.groups
         .map(
           (e) => ListTile(
@@ -78,7 +70,7 @@ class _KanbanHomeState extends State<KanbanHome> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [Icon(Icons.album)]),
             title: Text(e.groupName),
-            subtitle: Container(height: 30, child: AvatarList(group: e)),
+            subtitle: SizedBox(height: 30, child: AvatarList(group: e)),
             trailing: const Icon(Icons.arrow_right),
             onTap: () {
               print(e.users);

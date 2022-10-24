@@ -9,10 +9,10 @@ class AvatarList extends StatefulWidget {
   const AvatarList({Key? key, required this.group, this.maxMembers = 2}) : super(key: key);
 
   @override
-  _AvatarListState createState() => _AvatarListState();
+  AvatarListState createState() => AvatarListState();
 }
 
-class _AvatarListState extends State<AvatarList> {
+class AvatarListState extends State<AvatarList> {
   Widget mapGroupAsAvatars() {
     List<Widget> avatars = List.empty(growable: true);
     widget.group.users.asMap().forEach((i, value) {

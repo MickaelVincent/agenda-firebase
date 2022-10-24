@@ -1,4 +1,3 @@
-import 'package:Kanban/main.dart';
 import 'package:Kanban/screens/home/home.dart';
 import 'package:Kanban/screens/login-register/login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -16,7 +15,7 @@ class AuthWrapper extends StatefulWidget {
 
 class AuthWrapperState extends State<AuthWrapper> {
   Future<void> initializeDefault() async {
-    FirebaseApp app = await Firebase.initializeApp(
+    await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform);
   }
 

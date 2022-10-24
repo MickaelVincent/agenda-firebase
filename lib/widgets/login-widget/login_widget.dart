@@ -31,6 +31,7 @@ class _LoginFormState extends State<LoginForm> {
       String returnVal =
           await authStore.signIn(emailController.text, passwordController.text);
       if (returnVal.isNotEmpty) {
+        // ignore: use_build_context_synchronously
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text(returnVal)));
       }

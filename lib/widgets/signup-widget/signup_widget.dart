@@ -1,4 +1,3 @@
-import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -32,7 +31,8 @@ class _SignUpWidgetState extends State<SignUpWidget> {
     if (_formKey.currentState!.validate()) {
       String returnVal = await authStore.signUp(emailController.text,
           passwordController.text, nickNameController.text);
-      if (returnVal != null && !returnVal.isEmpty) {
+      if (returnVal.isNotEmpty) {
+        // ignore: use_build_context_synchronously
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text(returnVal)));
       }
